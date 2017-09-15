@@ -48,10 +48,10 @@ for mtrack in mtrack_generator:
         if all(len(value) > 0 for value in dsd_stems.values()):
             print(mtrack.track_id)
             print(dsd_stems)
-            for key, value in dsd_stems.items():
-                base_path = mtrack.track_id
-                if not os.path.exists(base_path):
-                    os.makedirs(base_path)
+            base_path = mtrack.track_id
+            if not os.path.exists(base_path):
+                os.makedirs(base_path)
+                for key, value in dsd_stems.items():
                     mix.mix_multitrack(
                         mtrack,
                         os.path.join(base_path, key + ".wav"),
