@@ -1,3 +1,4 @@
+-e git+https://github.com/marl/medleydb.git#egg=medleydb
 audioread==2.1.5
 Cython==0.26.1
 decorator==4.1.2
@@ -5,7 +6,6 @@ google-api-python-client==1.6.3
 httplib2==0.10.3
 joblib==0.11
 librosa==0.5.1
-medleydb==1.3.3
 numpy==1.13.1
 oauth2client==4.1.2
 pyasn1==0.3.4
