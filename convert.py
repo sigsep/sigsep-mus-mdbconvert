@@ -22,6 +22,7 @@ named_sources = {
     ]
 }
 
+ignore_sources = ['sampler']
 # set output path
 output_path = 'mdbstems'
 
@@ -52,7 +53,7 @@ for mtrack in mtrack_generator:
                     dsd_stems[key].append(stem_id)
                     mapped = True
 
-            if not mapped:
+            if not mapped and mtrack.stems[stem_id].instrument[0] not in ignore_sources:
                 # add remaining stems to `other` component
                 dsd_stems['other'].append(stem_id)
 
