@@ -1,4 +1,4 @@
--e git+https://github.com/marl/medleydb.git#egg=medleydb
+-e git+https://github.com/marl/medleydb.git@b1ab223babf7e38b5b30969cd771faf9f9d28bae#egg=medleydb
 audioread==2.1.5
 Cython==0.26.1
 decorator==4.1.2
